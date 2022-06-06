@@ -1,0 +1,25 @@
+program POWER
+	declare pow,num,result;
+
+	function power(in num,in pow)
+	
+		declare a, b;
+	{
+	    if(pow<>0)
+	    {
+	        a := pow-1;
+	        return (num*power(in num,in a));
+	    }
+	    else
+	    {
+	        return(1);
+    	}
+	}
+
+	{
+		input(num);
+		input(pow);
+
+		result := power(in num,in pow);
+		print(result);
+	}.

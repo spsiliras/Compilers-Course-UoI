@@ -1,0 +1,18 @@
+program switch
+	
+	declare x, res;
+
+	function check(in x)
+	{
+		switchcase
+			case(x>5) return(1);
+			case(x<3) return(2);
+			default return(0);
+	}
+
+	{
+		input(x);
+
+		res := check(in x);
+		print(res);
+	}.
